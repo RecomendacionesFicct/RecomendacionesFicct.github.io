@@ -155,65 +155,64 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <!-- Subopciones de la Opción 1 con Tabs -->
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'primero')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Primer Semestre</p>
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-calendar-alt"></i>
+                                        <p>
+                                            Primer Semestre
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
                                     </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'intro')">
+                                                <i class="nav-icon fas fa-bolt"></i>
+                                                <p>Introduccion</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'segundo')">
+                                                <i class="nav-icon fas fa-bolt"></i>
+                                                <p>Estructura</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'segundo')">
+                                                <i class="nav-icon fas fa-bolt"></i>
+                                                <p>Calculo I</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'segundo')">
+                                                <i class="nav-icon fas fa-bolt"></i>
+                                                <p>Fisica I</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'segundo')">
+                                                <i class="nav-icon fas fa-bolt"></i>
+                                                <p>Ingles I</p>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'segundo')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Segundo Semestre</p>
+
+                                <li class="nav-item has-treeview">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-calendar-alt"></i>
+                                        <p>
+                                            Segundo Semestre
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'tercero')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Tercer Semestre</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'cuarto')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Cuarto Semestre</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'quinto')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Quinto Semestre</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'sexto')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Sexto Semestre</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'septimo')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Septimo Semestre</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'octavo')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Octavo Semestre</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'noveno')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Noveno Semestre</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link" onclick="openTab(event, 'noveno')">
-                                        <i class="nav-icon fas fa-bolt"></i>
-                                        <p>Electivas</p>
-                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'segundo')">
+                                                <i class="nav-icon fas fa-bolt"></i>
+                                                <p>Programacion I</p>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -249,7 +248,8 @@
                     <!-- Dashboard Tab Content -->
                     <div id="dashboard" class="tabcontent active">
                         <div class="materia">
-                            <h3 style="font-weight: bold; text-align: center;">Bienvenido a la Pagina de Recomendaciones</h3>
+                            <h3 style="font-weight: bold; text-align: center;">Bienvenido a la Pagina de Recomendaciones
+                            </h3>
                             <p style="text-align: center; margin-top: -8px;">SupportFicct</p>
                         </div>
                     </div>
@@ -262,18 +262,18 @@
                     </div>
                     <!--Desarrolladores Tab Content -->
                     <div id="desarrolladores" class="tabcontent">
-                     
+
                     </div>
                     <!-- Semestres -->
-                    <div id="primero" class="tabcontent">
-                       
+                    <div id="intro" class="tabcontent">
+                      
                     </div>
 
                     <div id="segundo" class="tabcontent">
-                       
+
                     </div>
                     <div id="tercero" class="tabcontent">
-                        
+
                     </div>
                     <div id="cuarto" class="tabcontent">
                         <div class="materia">
@@ -312,10 +312,10 @@
                         </div>
                     </div>
                     <div id="grupos" class="tabcontent">
-                        
+
                     </div>
                     <div id="informaciones" class="tabcontent">
-                        
+
                     </div>
                 </div>
             </section>
@@ -362,8 +362,8 @@
         mostrarOtraVista('/VistaAuxOficiales.html', 'oficiales');
         mostrarOtraVista('/VistaGrupos.html', 'grupos');
         mostrarOtraVista('/VistaInformaciones.html', 'informaciones');
-        //semestres
-        mostrarOtraVista('Semestres/primero.html', 'primero');
+        //Materias
+        mostrarOtraVista('Materias/Intro.html', 'intro');
         mostrarOtraVista('Semestres/segundo.html', 'segundo');
         mostrarOtraVista('Semestres/tercero.html', 'tercero');
 
