@@ -1,124 +1,198 @@
 <style>
-    /* Estilos para las imágenes */
-    .user-list .user img {
-        width: 140px; /* Tamaño deseado para todas las imágenes */
-        height: 150px; /* Tamaño deseado para todas las imágenes */
-        border: 2px solid #ccc;
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Contenedor principal */
+    .user-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Contenedor de usuario */
+    .user {
+        display: flex;
+        align-items: flex-start; /* Alinear los elementos al principio */
+        background-color: #fff;
         border-radius: 10px;
-        margin-right: 20px; /* Margen entre la imagen y el texto */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    /* Estilos para la imagen de perfil */
+    .user img {
+        width: 140px; /* Ancho deseado para la imagen */
+        height: 160px; /* Altura deseada para la imagen */
+        object-fit: cover;
+    }
+
+    /* Contenedor de texto */
+    .user-info {
+        padding: 20px;
+        max-width: 300px; /* Ancho máximo para el contenedor de texto */
+    }
+
+    /* Nombre del usuario */
+    .user-info p {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .user-info .user-name {
+        font-weight: bold;
+    }
+
+    .user-info .user-materias {
+        font-size: 0.9rem;
+    }
+
+    /* Enlace de contacto */
+    .user-info a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    /* Enlace de contacto al pasar el mouse */
+    .user-info a:hover {
+        text-decoration: underline;
+    }
+
+    /* Media query para pantallas pequeñas */
+    @media (max-width: 600px) {
+        /* Reducir el tamaño de la imagen */
+        .user img {
+            width: 100px;
+            height: 120px;
+        }
+
+        /* Reducir el tamaño del texto */
+        .user-info {
+            max-width: 200px;
+        }
+
+        .user-info p {
+            font-size: 0.8rem;
+        }
+
+        .user-info .user-name {
+            font-size: 1rem;
+        }
     }
 </style>
 
+<!-- colocar los datos de los auxiliares oficiales -->
 <div class="materia">
-    <h3 style="font-weight: bold; text-align: center;">AUXILIARES</h3>
-    <p style="text-align: center; margin-top: -15px;">#EstamosParaRecomendarte</p>
+    <h3 style="font-weight: bold; text-align: center;">Auxiliares Oficiales</h3>
+    <p style="text-align: center; margin-top: -15px;">#EstamosParaAyudarte</p>
 </div>
-
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
+<div class="user-list">
+    <div class="user">
         <img src="img/DanielCastedo.jpg" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Daniel Castedo</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Pro1, </p>
-            <p style="margin: 0; font-size: 0.9rem;">Intro, Metodos</p>
+        <div class="user-info">
+            <p class="user-name">Daniel Castedo</p>
+            <p class="user-materias">Materias: Programacion 1, Introduccion, Metodos</p>
             <a href="https://wa.me/+59176061697">Contactar</a>
         </div>
     </div>
 </div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
-        <img src="img/miguel.png" alt="Foto de perfil" >
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Miguel Ballivian</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Bd 1 </p>
+
+<div class="user-list">
+    <div class="user">
+        <img src="img/miguel.png" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Miguel Ballivian</p>
+            <p class="user-materias">Materias: Base de datos I, Sistemas de informacion I</p>
             <a href="https://wa.me/+59176061697">Contactar</a>
         </div>
     </div>
 </div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
+<div class="user-list">
+    <div class="user">
         <img src="img/isaias.jpg" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Isaias Gutierrez</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Calculo 1</p>
+        <div class="user-info">
+            <p class="user-name">Isaias Gutierrez</p>
+            <p class="user-materias">Materias: Calculo 1, Estructuras Discretas</p>
             <a href="https://wa.me/+59176061697">Contactar</a>
         </div>
     </div>
 </div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
+<div class="user-list">
+    <div class="user">
         <img src="img/Eduardo.jpg" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Eduardo Villca</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Introduccion</p>
+        <div class="user-info">
+            <p class="user-name">Eduardo Villca</p>
+            <p class="user-materias">Materias: Introduccion a la Informatica </p>
             <a href="https://wa.me/+59176061697">Contactar</a>
         </div>
     </div>
 </div>
-
-
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
+<div class="user-list">
+    <div class="user">
         <img src="img/OscarCruz.jpg" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Oscar Cruz</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Introduccion</p>
-            <p style="margin: 0; font-size: 0.9rem;">Programacion1</p>
+        <div class="user-info">
+            <p class="user-name">Oscar Cruz</p>
+            <p class="user-materias">Materias: Introduccion a la Informatica, Programacion I</p>
             <a href="https://wa.me/+59176061697">Contactar</a>
         </div>
     </div>
 </div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
+<div class="user-list">
+    <div class="user">
         <img src="img/Lomin.png" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Alejandro Loma</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Redes I, II </p>
-            <a href="https://wa.me/+59176061697">Contactar</a>
-        </div>
-    </div>
-</div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
-        <img src="img/ronaldo.jpg" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Ronaldo Riveros</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Intro, Pro1, </p>
-            <p style="margin: 0; font-size: 0.9rem;">Ed2, So1, Base2, Si1</p>
+        <div class="user-info">
+            <p class="user-name">Alejandro Loma</p>
+            <p class="user-materias">Materias: Redes I, Redes II</p>
             <a href="https://wa.me/+59176061697">Contactar</a>
         </div>
     </div>
 </div>
 
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
+<div class="user-list">
+    <div class="user">
+        <img src="img/ronaldo.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Ronaldo Riveros</p>
+            <p class="user-materias">Materias: Sistemas Operativos I, Base de datos II</p>
+            <a href="https://wa.me/+59176061697">Contactar</a>
+        </div>
+    </div>
+</div>
+
+<div class="user-list">
+    <div class="user">
         <img src="img/Rene.png" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Rene Chungara</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Intro, Pro2, </p>
-            <p style="margin: 0; font-size: 0.9rem;">Si1, Si2</p>
+        <div class="user-info">
+            <p class="user-name">Rene Chungara</p>
+            <p class="user-materias">Materias: Programacion II, Sistemas de informacion I</p>
             <a href="https://wa.me/+59176061697">Contactar</a>
         </div>
     </div>
 </div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
-        <img src="img/michell.png" alt="Foto de perfil" >
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Michel Cardenas</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias:Ensamblador, </p>
-            <p style="margin: 0; font-size: 0.9rem;">Soporte, Si1</p>
+<div class="user-list">
+    <div class="user">
+        <img src="img/michell.png" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Michel Cardenas</p>
+            <p class="user-materias">Materias: Programacion Ensamblador, Soporte</p>
             <a href="https://wa.me/+59176061697">Contactar</a>
         </div>
     </div>
 </div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
-        <img src="img/Andres.jpg" alt="Foto de perfil" >
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Andres Apaza</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias:Probabilidad 1</p>
+
+<div class="user-list">
+    <div class="user">
+        <img src="img/Andres.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Andres Apaza</p>
+            <p class="user-materias">Materias:Probabilidades y Estadistica I</p>
             <a href="https://wa.me/+59176061697">Contactar</a>
         </div>
     </div>
 </div>
+
