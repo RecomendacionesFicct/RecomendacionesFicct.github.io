@@ -262,10 +262,7 @@
                     </div>
                     <!--Desarrolladores Tab Content -->
                     <div id="desarrolladores" class="tabcontent">
-                        <div class="materia">
-                            <h3 style="font-weight: bold; text-align: center;">DESARROLLADORES</h3>
-                            <p style="text-align: center; margin-top: -15px;">#SiLoPuedesImaginarLoPuedesProgramar</p>
-                        </div>
+                     
                     </div>
                     <!-- Semestres -->
                     <div id="primero" class="tabcontent">
@@ -360,6 +357,7 @@
                 .catch(error => console.error('Error al cargar la vista:', error));
         }
         // Llama a la función para mostrar las otras vistas al cargar la página
+        mostrarOtraVista('/VistaDesarrolladores.html', 'desarrolladores');
         mostrarOtraVista('/VistaAuxVoluntarios.html', 'voluntario');
         mostrarOtraVista('/VistaAuxOficiales.html', 'oficiales');
         mostrarOtraVista('/VistaGrupos.html', 'grupos');

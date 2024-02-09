@@ -1,62 +1,143 @@
-<style>
-    /* Estilos para las imágenes */
-    .user-list .user img {
-        width: 140px; /* Tamaño deseado para todas las imágenes */
-        height: 160px; /* Tamaño deseado para todas las imágenes */
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        margin-right: 20px; /* Margen entre la imagen y el texto */
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Dinámicos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-<div class="materia">
-    <h3 style="font-weight: bold; text-align: center;">AUXILIARES</h3>
-    <p style="text-align: center; margin-top: -15px;">#EstamosParaRecomendarte</p>
-</div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
-        <img src="img/Maykol.jpg" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Maykol Villazon</p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Introduccion</p>
-            <p style="margin: 0; font-size: 0.9rem;">Fisca I, Fisica II</p>
-            <a href="https://wa.me/+59176061697">Contactar</a>
+        /* Contenedor principal */
+        .user-list {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        /* Contenedor de usuario */
+        .user {
+            display: flex;
+            align-items: flex-start; /* Alinear los elementos al principio */
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Estilos para la imagen de perfil */
+        .user img {
+            width: 140px; /* Ancho deseado para la imagen */
+            height: 160px; /* Altura deseada para la imagen */
+            object-fit: cover;
+        }
+
+        /* Contenedor de texto */
+        .user-info {
+            padding: 20px;
+            max-width: 300px; /* Ancho máximo para el contenedor de texto */
+        }
+
+        /* Nombre del usuario */
+        .user-info p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .user-info .user-name {
+            font-weight: bold;
+        }
+
+        .user-info .user-materias {
+            font-size: 0.9rem;
+        }
+
+        /* Enlace de contacto */
+        .user-info a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        /* Enlace de contacto al pasar el mouse */
+        .user-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 600px) {
+            /* Reducir el tamaño de la imagen */
+            .user img {
+                width: 100px;
+                height: 120px;
+            }
+
+            /* Reducir el tamaño del texto */
+            .user-info {
+                max-width: 200px;
+            }
+
+            .user-info p {
+                font-size: 0.8rem;
+            }
+
+            .user-info .user-name {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="materia">
+        <h3 style="font-weight: bold; text-align: center;">AUXILIARES OFICIALES</h3>
+        <p style="text-align: center; margin-top: -15px;">#EstamosParaRecomendarte</p>
+    </div>
+    <div class="user-list">
+        <div class="user">
+            <img src="img/Maykol.jpg" alt="Foto de perfil">
+            <div class="user-info">
+                <p class="user-name">Maykol Villazon</p>
+                <p class="user-materias">Materias: Introduccion, Fisica I, Fisica II</p>
+                <a href="https://wa.me/+59176061697">Contactar</a>
+            </div>
         </div>
     </div>
-</div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
-        <img src="img/iafe.jpg" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Jhafeth Cadima
-            </p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Estructuras,</p>
-            <p style="margin: 0; font-size: 0.9rem;">Prob I, Ecuaciones</p>
-            <a href="https://wa.me/+59176061697">Contactar</a>
+
+    <div class="user-list">
+        <div class="user">
+            <img src="img/iafe.jpg" alt="Foto de perfil">
+            <div class="user-info">
+                <p class="user-name">Jhafeth Cadima</p>
+                <p class="user-materias">Materias: Estructuras, Prob I, Ecuaciones</p>
+                <a href="https://wa.me/+59176061697">Contactar</a>
+            </div>
         </div>
     </div>
-</div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
-        <img src="img/erick.png" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Erick Patton
-            </p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Sistemas de </p>
-            <p style="margin: 0; font-size: 0.9rem;">Informacion I</p>
-            <a href="https://wa.me/+59176061697">Contactar</a>
+
+    <div class="user-list">
+        <div class="user">
+            <img src="img/erick.png" alt="Foto de perfil">
+            <div class="user-info">
+                <p class="user-name">Erick Patton</p>
+                <p class="user-materias">Materias: Sistemas de Informacion I, Aquitectura</p>
+                <a href="https://wa.me/+59176061697">Contactar</a>
+            </div>
         </div>
     </div>
-</div>
-<div class="user-list" style="display: flex; justify-content: center; margin-top: 10px;">
-    <div class="user" style="display: flex; align-items: center; text-align: left;">
-        <img src="img/bruno.png" alt="Foto de perfil">
-        <div>
-            <p style="margin: 0; font-size: 1rem; font-weight: bold;">Anthony Bruno
-            </p>
-            <p style="margin: 0; font-size: 0.9rem;">Materias: Cal 2, </p>
-            <p style="margin: 0; font-size: 0.9rem;">Ecuaciones</p>
-            <a href="https://wa.me/+59176061697">Contactar</a>
+    <div class="user-list">
+        <div class="user">
+            <img src="img/bruno.png" alt="Foto de perfil">
+            <div class="user-info">
+                <p class="user-name">Anthony Bruno</p>
+                <p class="user-materias">Materias: Calculo 2, Ecuaciones Diferenciales</p>
+                <a href="https://wa.me/+59176061697">Contactar</a>
+            </div>
         </div>
     </div>
-</div>
+</body>
+</html>
