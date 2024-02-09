@@ -1,4 +1,89 @@
-<div class="materia">
-    <h3 style="font-weight: bold; text-align: center;">MATERIAS</h3>
-    <p style="text-align: center; margin-top: -15px;">#EstamosParaRecomendarte</p>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones de Docentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .docente {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nombre-docente {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .materia {
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .docente {
+                padding: 10px;
+            }
+
+            .nombre-docente {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="materia">
+        <h3 style="font-weight: bold; text-align: center; ">Recomendacion de Docentes</h3>
+      
+    </div>
+    <div class="container">     
+       
+        <!-- Ejemplo de información de un docente -->
+        <div class="docente">
+            <p class="nombre-docente">Juan Carlos Contreras</p>
+            <p class="materia">Materia: <span style="font-style: normal;">Introducción a la Informática</span></p>
+            <p>Dificultad: <span class="calificacion">⚡️⚡️⚡️⚡️⚡️</span></p>
+            <p>Aprendizaje: <span class="calificacion">⚡️⚡️⚡️</span></p>
+            <p>Descripcion: <span class="calificacion">Buen docente aprendes de el</span></p>
+        </div>
+        
+        <!-- Puedes agregar más bloques 'docente' según sea necesario -->
+        <p style="font-size: 0.9rem;">Los rayitos determinan la recomendación. El docente más recomendado es aquel que tenga más rayitos.</p>
+        <p style="font-size: 0.9rem;">Dificultad: Puede variar desde fácil hasta difícil, y se refiere a la cantidad de esfuerzo y tiempo que se requiere para comprender y dominar la materia.</p>
+        <p style="font-size: 0.9rem;">Aprendizaje: Se refiere al proceso de adquirir conocimientos y enseñanza de los docentes de cada materia.</p>
+        
+    </div>
+</body>
+</html>
+
