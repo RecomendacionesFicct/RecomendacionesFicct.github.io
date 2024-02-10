@@ -1,4 +1,119 @@
-<div class="materia">
-    <h3 style="font-weight: bold; text-align: center;">Grupos Academicos</h3>
-    <p style="text-align: center; margin-top: -8px;">#SupportAcademy</p>
+<style>
+    /* Estilos para el contenedor de bloques */
+    .bloques-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    /* Estilos para cada bloque individual */
+    .bloque {
+        background-color: #8B0000;
+        /* Cambiado a rojo */
+        color: white;
+        /* Texto blanco */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: calc(33.33% - 20px);
+        /* Para que haya tres bloques por fila */
+        max-width: 300px;
+        /* Ancho máximo de cada bloque */
+    }
+
+    /* Estilos para las imágenes */
+    .bloque img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para los títulos */
+    .bloque h2 {
+        font-size: 1.2em;
+        /* Reduce el tamaño del título */
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para los párrafos */
+    .bloque p {
+        font-size: 1em;
+        /* Tamaño de texto normal */
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para los enlaces */
+    /* Estilos para los enlaces */
+    .bloque a {
+        display: inline-block;
+        background-color: white;
+        /* Fondo blanco */
+        color: #8B0000;
+        /* Texto rojo */
+        font-weight: bold;
+        /* Texto en negrita */
+        padding: 8px 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+        /* Añadido transición para color de fondo y texto */
+    }
+
+    .bloque .descripcion {
+        font-size: 0.8em;
+        /* Tamaño de letra más pequeño */
+        font-weight: normal;
+        /* Eliminar negrita */
+    }
+
+    .bloque a:hover {
+        background-color: rgb(86, 86, 219);
+        /* Cambio de color al pasar el ratón */
+        color: white;
+        /* Texto blanco */
+    }
+
+
+    /* Estilos para responsividad en pantallas pequeñas */
+    @media (max-width: 768px) {
+        .bloque {
+            width: calc(100% - 20px);
+            /* Ancho total menos los márgenes */
+            max-width: none;
+            /* Elimina el ancho máximo */
+        }
+    }
+</style>
+
+
+<h1>GRUPOS ACADEMICOS FICCT</h1>
+<!-- Contenedor de bloques -->
+<div class="bloques-container">
+
+    <div class="bloque">
+        <img src="img/perfil.jpg" alt="Imagen 1">
+        <h2>INFORMACIONES SUPPORT</h2>
+        <p class="descripcion">Ponte al tanto de las fechas de inscripción, retiro
+            adición y otras actividades más.</p>
+        <a href="https://chat.whatsapp.com/GaDOeT9U8itHi7stoRMzsk">Ir al grupo</a>
+    </div>
+
+    <div class="bloque">
+        <img src="img/perfil.jpg" alt="Imagen 2">
+        <h2>RECOMENDACIONES FICCT</h2>
+        <p class="descripcion">Ponte al tanto de las fechas de inscripción, retiro
+            adición y otras actividades más.</p>
+        <a href="#grupo2">Ir al Grupo</a>
+    </div>
+
+    <div class="bloque">
+        <img src="img/perfil.jpg" alt="Imagen 3">
+        <h2>INTERCENTRO FICCT</h2>
+        <p class="descripcion">Ponte al tanto de las fechas de inscripción, retiro
+            adición y otras actividades más.</p>
+        <a href="#grupo3">Ir al Grupo</a>
+    </div>
 </div>
