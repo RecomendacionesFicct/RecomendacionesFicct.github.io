@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoridades FICCT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .materia {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .autoridad {
+            text-align: center;
+            margin-bottom: 40px;
+            background-color: rgb(156, 7, 7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative; /* Añadido para superponer el patrón */
+            overflow: hidden; /* Oculta el exceso de patrón */
+        }
+        
+        .autoridad:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/patron.png'); /* Cambia 'img/patron.png' por la ruta de tu patrón */
+            opacity: 0.2; /* Ajusta la opacidad según sea necesario */
+        }
+        
+        .autoridad img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+            border: 4px solid #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .autoridad:hover img {
+            transform: scale(1.05);
+        }
+        
+        .autoridad h4 {
+            margin: 10px 0;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .autoridad p {
+            margin: 5px 0;
+            font-size: 1.5rem;
+            color: #8ed61b;
+        }
+
+        @media screen and (max-width: 600px) {
+            .autoridad {
+                padding: 10px;
+            }
+            .autoridad img {
+                width: 150px;
+                height: 150px;
+            }
+            .autoridad h4 {
+                font-size: 1.2rem;
+            }
+            .autoridad p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="materia">
+        <h3 style="font-weight: bold; text-align: center;">AUTORIDADES</h3>
+        <p style="text-align: center; margin-top: -5px;">FICCT | 2024</p>
+    </div>
+    <div class="container">
+        <p style="font-weight: bold;text-align: center; margin-top: -5px;">ILUSTRE CONSEJO UNIVERSITARIO</p>
+        <div class="autoridad">
+            <img src="img/cadima.jpg" alt="Autoridad 2">
+            <h4>Jhafeth Cadima</h4>
+            <h4>I.C.U.</h4>
+        </div>
+        <div class="autoridad">
+            <img src="img/Lomin.png" alt="Autoridad 2">
+            <h4>Alejandro Loma</h4>
+            <h4>I.C.U.</h4>
+        </div>
+        <div class="autoridad">
+            <img src="img/roly.png" alt="Autoridad 2">
+            <h4>Roly Edson </h4>
+            <h4>I.C.U.</h4>
+        </div>
+        <div class="autoridad">
+            <img src="img/erick.png" alt="Autoridad 2">
+            <h4>Erick Patton</h4>
+            <h4>I.C.U.</h4>
+        </div>
+        <p style="font-weight: bold;text-align: center; margin-top: -5px;">CENTROS INTERNOS</p>
+        <div class="autoridad">
+            <img src="img/Harold.jpg" alt="Autoridad 2">
+            <h4>Harold Apaza</h4>
+            <h4>Ejecutivo C.I. Sistemas</h4>
+        </div>
+        <div class="autoridad">
+            <img src="img/Haroldromero.jpg" alt="Autoridad 2">
+            <h4>Harold Romero</h4>
+            <h4>General C.I. Sistemas</h4>
+        </div>
+
+        <div class="autoridad">
+            <img src="img/perfil.jpg" alt="Autoridad 2">
+            <h4>Diego Hurtado</h4>
+            <h4>Ejecutivo C.I. Informatica</h4>
+        </div>
+        <div class="autoridad">
+            <img src="img/isaias.jpg" alt="Autoridad 2">
+            <h4>Isaias Gutierrez</h4>
+            <h4>General C.I. Informatica</h4>
+        </div>
+
+        <div class="autoridad">
+            <img src="img/cayola.jpg" alt="Autoridad 2">
+            <h4>Fernando Cayola</h4>
+            <h4>Ejecutivo C.I. Redes</h4>
+        </div>
+        <div class="autoridad">
+            <img src="img/tati.jpg" alt="Autoridad 2">
+            <h4>Tatiana Lara</h4>
+            <h4>General C.I. Redes</h4>
+        </div>
+
+        <p style="font-weight: bold;text-align: center; margin-top: -5px;">INTERCENTRO FACULTATIVO</p>
+        <div class="autoridad">
+            <img src="img/Maykol.jpg" alt="Autoridad 2">
+            <h4>Maykol Villazon</h4>
+            <h4>Ejecutivo I.C.</h4>
+        </div>
+        <div class="autoridad">
+            <img src="img/DanielCastedo.png" alt="Autoridad 2">
+            <h4>Daniel Castedo</h4>
+            <h4>General I.C.</h4>
+        </div>
+    </div>
+   
+</body>
+</html>
