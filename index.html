@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
     <style>
-        /* Ajuste para que el menú hamburguesa funcione en pantallas móviles */
+        /* Aquí colocas el bloque de estilos CSS */
         @media (max-width: 768px) {
             .sidebar-mini.sidebar-collapse .content-wrapper {
                 margin-left: 0 !important;
@@ -42,9 +42,21 @@
             .materia h3 {
                 margin-top: 60px;
             }
+
+            .materia {
+                max-width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .logo-support img {
+                max-width: 200px;
+                /* Puedes ajustar este valor según tus necesidades */
+                height: auto;
+                border-radius: 10px;
+                transition: transform 0.3s;
+            }
         }
-
-
 
         /* Estilos para las vistas de contenido */
         .tabcontent {
@@ -67,6 +79,7 @@
             /* Rojo oscuro */
         }
     </style>
+
 </head>
 
 <body class="sidebar-mini sidebar-collapse">
@@ -456,16 +469,21 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                    <!-- Dashboard Tab Content -->
                     <div id="dashboard" class="tabcontent active">
                         <div class="materia">
-                            <h3 style="font-weight: bold; text-align: center;">Bienvenido a la Pagina de Recomendaciones
-                            </h3>
-                            <p style="text-align: center; margin-top: -8px;">SupportFicct</p>
-                            <img src="img/Comunicado.jpg" alt="Descripción de la imagen"
-                                style="display: block; margin: auto; width: 80%; max-width: 800px;">
+                            <p style="font-weight: bold;">ㅤ</p>
+                            <h3 style="font-weight: bold;">Bienvenido a la Página de Recomendaciones</h3>
+                            <p class="special">SupportFicct</p>
+                            <div class="typewriter">
+                                <p class="typewriter-text"></p>
+                            </div>
+                            <div class="logo-support">
+                                <img src="img/logo.png" alt="logosupport" style="max-width: 300px; height: auto;">
+                            </div>
+                            <p style="font-size: 10px;margin-top: 10px;">¡Hola! Aqui encontrar informaciones sobre la FICCT,<br> así como recomendaciones  docentes para todas las materias de la Facultad de Ingeniería en Ciencias de la Computación. ¡Espero que la pagina te sea de gran ayuda!</p>
                         </div>
                     </div>
+
 
                     <!-- Auxiliares Tab Content -->
                     <div id="oficiales" class="tabcontent">
@@ -517,6 +535,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/js/adminlte.min.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const words = ["Ing. Informática", "Ing. en Sistema", "Ing.en Redes Y Telecomunicacion", "Ing. en Robótica"];
+            let currentWordIndex = 0;
+            let currentWord = '';
+            let letterIndex = 0;
+            let currentLetter = '';
+
+            function typeWords() {
+                if (currentWordIndex === words.length) {
+                    currentWordIndex = 0;
+                }
+                currentWord = words[currentWordIndex];
+                currentLetter = currentWord.slice(0, ++letterIndex);
+
+                document.querySelector('.typewriter-text').textContent = currentLetter;
+
+                if (currentLetter.length === currentWord.length) {
+                    setTimeout(() => {
+                        letterIndex = 0;
+                        currentWordIndex++;
+                        typeWords();
+                    }, 2000); // Ajusta el tiempo de espera entre palabras aquí
+                } else {
+                    setTimeout(typeWords, 200); // Ajusta la velocidad de la animación aquí
+                }
+            }
+
+            typeWords();
+        });
+
         // Función para mostrar la vista de contenido correspondiente al hacer clic en una opción del menú
         function openTab(evt, tabName) {
             // Ocultar todas las vistas de contenido
