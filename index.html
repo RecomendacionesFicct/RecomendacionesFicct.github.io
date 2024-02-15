@@ -65,7 +65,7 @@
         }
 
         .content-wrapper {
-            background-color: #ffffff;
+            background-color: dark;
             /* Cambia el fondo del contenido a blanco */
         }
 
@@ -78,6 +78,10 @@
             background-color: #8B0000;
             /* Rojo oscuro */
         }
+        .main-header{
+            background-color: #8B0000 !important;
+        }
+
     </style>
 
 </head>
@@ -85,11 +89,20 @@
 <body class="sidebar-mini sidebar-collapse">
     <div class="wrapper">
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav class="main-header navbar navbar-expand navbar-black navbar-dark">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="theme-toggle" role="button">
+                        <i class="fas fa-adjust"></i> <!-- Cambiar por el icono de tema que prefieras -->
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -227,43 +240,43 @@
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'programacion1')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'programacion2')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Programacion II</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'algebra')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'arquitectura')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Arquitectura</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'calculo2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'ecuaciones')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Ecuaciones</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'ingles2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'administracion')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Administracion</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica3')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Fisica III</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'analisiscircuito')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Analisis Circuito</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'teoriacampos')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Teoria Campos</p>
                                             </a>
@@ -282,37 +295,37 @@
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'programacion1')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'probabilidad1')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Probabilidad I</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'algebra')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'ensamblador')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Ensamblador</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'calculo2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'metodos')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Metodos Numericos</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'ingles2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'contabilidad')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Contabilidad</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'ed1')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Estructura Datos I</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'cirelectronico')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>A. Circuito Electronicos</p>
                                             </a>
@@ -330,61 +343,62 @@
                                     </a>
                                     <ul class="nav nav-treeview">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'programacion1')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'probabilidad2')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Probabilidad II</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'algebra')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'ed2')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Estructura Datos II</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'calculo2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'bd1')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Base Datos I</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'ingles2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'economia')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Economia</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'oym')">
+                                                <i class="nav-icon fas fa-bolt"></i>
+                                                <p>Organizacion y Metodos</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'logicos')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Sistemas Logicos I</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
-                                                <i class="nav-icon fas fa-bolt"></i>
-                                                <p>A. Circuito Electronicos</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'elecaplicada')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Electronica Aplicada</p>
                                             </a>
                                         </li>
+
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'señalessistemas')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Señales y Sistemas</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'prolo')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Programacion Logica</p>
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link" onclick="openTab(event, 'fisica2')">
+                                            <a href="#" class="nav-link" onclick="openTab(event, 'lenguaje')">
                                                 <i class="nav-icon fas fa-bolt"></i>
                                                 <p>Lenguaje Formales</p>
                                             </a>
@@ -480,7 +494,10 @@
                             <div class="logo-support">
                                 <img src="img/logo.png" alt="logosupport" style="max-width: 300px; height: auto;">
                             </div>
-                            <p style="font-size: 10px;margin-top: 10px;">¡Hola! Aqui encontrar informaciones sobre la FICCT,<br> así como recomendaciones  docentes para todas las materias de la Facultad de Ingeniería en Ciencias de la Computación. ¡Espero que la pagina te sea de gran ayuda!</p>
+                            <p style="font-size: 10px;margin-top: 10px;">¡Hola! Aqui encontrar informaciones sobre la
+                                FICCT,<br> así como recomendaciones docentes para todas las materias de la Facultad de
+                                Ingeniería en Ciencias de la Computación. ¡Espero que la pagina te sea de gran ayuda!
+                            </p>
                         </div>
                     </div>
 
@@ -512,6 +529,96 @@
                     <div id="ingles1" class="tabcontent">
 
                     </div>
+                    <!-- semestr2 -->
+                    <div id="algebra" class="tabcontent">
+
+                    </div>
+                    <div id="calculo2" class="tabcontent">
+
+                    </div>
+                    <div id="fisica2" class="tabcontent">
+
+                    </div>
+                    <div id="ingles2" class="tabcontent">
+
+                    </div>
+                    <div id="programacion1" class="tabcontent">
+
+                    </div>
+
+                    <!-- semestre3 -->
+                    <div id="administracion" class="tabcontent">
+
+                    </div>
+                    <div id="analisiscircuito" class="tabcontent">
+
+                    </div>
+                    <div id="arquitectura" class="tabcontent">
+
+                    </div>
+                    <div id="ecuaciones" class="tabcontent">
+
+                    </div>
+                    <div id="fisica3" class="tabcontent">
+
+                    </div>
+                    <div id="programacion2" class="tabcontent">
+
+                    </div>
+                    <div id="teoriacampos" class="tabcontent">
+
+                    </div>
+
+                    <!-- semestre4 -->
+                    <div id="cirelectronico" class="tabcontent">
+
+                    </div>
+                    <div id="contabilidad" class="tabcontent">
+
+                    </div>
+                    <div id="ensamblador" class="tabcontent">
+
+                    </div>
+                    <div id="ed1" class="tabcontent">
+
+                    </div>
+                    <div id="metodos" class="tabcontent">
+
+                    </div>
+                    <div id="probabilidad1" class="tabcontent">
+
+                    </div>
+                    <!-- semestre 5 -->
+                    <div id="bd1" class="tabcontent">
+
+                    </div>
+                    <div id="economia" class="tabcontent">
+
+                    </div>
+                    <div id="elecaplicada" class="tabcontent">
+
+                    </div>
+                    <div id="ed2" class="tabcontent">
+
+                    </div>
+                    <div id="lenguaje" class="tabcontent">
+
+                    </div>
+                    <div id="oym" class="tabcontent">
+
+                    </div>
+                    <div id="probabilidad2" class="tabcontent">
+
+                    </div>
+                    <div id="prolo" class="tabcontent">
+
+                    </div>
+                    <div id="señalessistemas" class="tabcontent">
+
+                    </div>
+                    <div id="logicos" class="tabcontent">
+
+                    </div>
 
                     <!-- extras -->
                     <div id="grupos" class="tabcontent">
@@ -535,8 +642,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/js/adminlte.min.js"></script>
     <script>
+        // Función para cambiar entre temas claro y oscuro
+        function toggleTheme() {
+            const body = document.querySelector('body');
+            body.classList.toggle('dark-mode');
+        }
+
+        // Agregar un evento de clic al enlace de cambio de tema
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', toggleTheme);
+
         document.addEventListener('DOMContentLoaded', function () {
-            const words = ["Ing. Informática", "Ing. en Sistema", "Ing.en Redes Y Telecomunicacion", "Ing. en Robótica"];
+            const words = ["Ing. Informática", "Ing. en Sistemas", "Ing. en Redes Y Telecomunicaciones", "Ing. en Robótica"];
             let currentWordIndex = 0;
             let currentWord = '';
             let letterIndex = 0;
@@ -605,8 +722,42 @@
         mostrarOtraVista('semestre1/fisica1.html', 'fisica1');
         mostrarOtraVista('semestre1/calculo1.html', 'calculo1');
         mostrarOtraVista('semestre1/ingles1.html', 'ingles1');
-        // semestr2
 
+        // semestr2
+        mostrarOtraVista('semestre2/algebra.html', 'algebra');
+        mostrarOtraVista('semestre2/calculo2.html', 'calculo2');
+        mostrarOtraVista('semestre2/fisica2.html', 'fisica2');
+        mostrarOtraVista('semestre2/ingles2.html', 'ingles2');
+        mostrarOtraVista('semestre2/programacion1.html', 'programacion1');
+
+        //semestre3
+        mostrarOtraVista('semestre3/administracion.html', 'administracion');
+        mostrarOtraVista('semestre3/analisiscircuito.html', 'analisiscircuito');
+        mostrarOtraVista('semestre3/arquitectura.html', 'arquitectura');
+        mostrarOtraVista('semestre3/ecuaciones.html', 'ecuaciones');
+        mostrarOtraVista('semestre3/fisica3.html', 'fisica3');
+        mostrarOtraVista('semestre3/programacion2.html', 'programacion2');
+        mostrarOtraVista('semestre3/teoriacampos.html', 'teoriacampos');
+
+        //semestre4
+        mostrarOtraVista('semestre4/circuitoelectronico.html', 'cirelectronico');
+        mostrarOtraVista('semestre4/contabilidad.html', 'contabilidad');
+        mostrarOtraVista('semestre4/ensamblador.html', 'ensamblador');
+        mostrarOtraVista('semestre4/estructuradatos1.html', 'ed1');
+        mostrarOtraVista('semestre4/metodos.html', 'metodos');
+        mostrarOtraVista('semestre4/probabilidad1.html', 'probabilidad1');
+
+        //semestre5
+        mostrarOtraVista('semestre5/basedatos1.html', 'bd1');
+        mostrarOtraVista('semestre5/economia.html', 'economia');
+        mostrarOtraVista('semestre5/electronicaaplicada.html', 'elecaplicada');
+        mostrarOtraVista('semestre5/estructuradatos2.html', 'ed2');
+        mostrarOtraVista('semestre5/lenguajeformales.html', 'lenguaje');
+        mostrarOtraVista('semestre5/organizacion.html', 'oym');
+        mostrarOtraVista('semestre5/probabilidad2.html', 'probabilidad2');
+        mostrarOtraVista('semestre5/programacionlogica.html', 'prolo');
+        mostrarOtraVista('semestre5/señalesysistemas.html', 'señalessistemas');
+        mostrarOtraVista('semestre5/sistemaslogico1.html', 'logicos');
     </script>
 </body>
 

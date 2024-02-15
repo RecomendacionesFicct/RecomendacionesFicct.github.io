@@ -1,328 +1,345 @@
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
 
-        /* Contenedor principal */
-        .user-list {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
+    /* Contenedor principal */
+    .user-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
 
-        /* Contenedor de usuario */
-        .user {
-            display: flex;
-            align-items: flex-start; /* Alinear los elementos al principio */
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 460px;
-            height: 160px;
-        }
+    /* Contenedor de usuario */
+    .user {
+        display: flex;
+        align-items: flex-start;
+        /* Alinear los elementos al principio */
+        background-color: red;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 460px;
+        height: 160px;
+    }
 
-        /* Estilos para la imagen de perfil */
+    .user {
+        background-color: red !important;
+    }
+
+
+    /* Estilos para la imagen de perfil */
+    .user img {
+        width: 140px;
+        /* Ancho deseado para la imagen */
+        height: 160px;
+        /* Altura deseada para la imagen */
+        object-fit: cover;
+    }
+
+    /* Contenedor de texto */
+    .user-info {
+        padding: 20px;
+        max-width: 300px;
+        /* Ancho máximo para el contenedor de texto */
+    }
+
+    /* Nombre del usuario */
+    .user-info p {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .user-info .user-name {
+        font-weight: bold;
+    }
+
+    .user-info .user-materias {
+        font-size: 0.9rem;
+    }
+
+    /* Enlace de contacto */
+    .user-info a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    /* Enlace de contacto al pasar el mouse */
+    .user-info a:hover {
+        text-decoration: underline;
+    }
+
+    /* Media query para pantallas pequeñas */
+    @media (max-width: 600px) {
+
+        /* Reducir el tamaño de la imagen */
         .user img {
-            width: 140px; /* Ancho deseado para la imagen */
-            height: 160px; /* Altura deseada para la imagen */
-            object-fit: cover;
+            width: 100px;
+            height: 120px;
         }
 
-        /* Contenedor de texto */
+        /* Reducir el tamaño del texto */
         .user-info {
-            padding: 20px;
-            max-width: 300px; /* Ancho máximo para el contenedor de texto */
+            max-width: 200px;
         }
 
-        /* Nombre del usuario */
         .user-info p {
-            margin: 0;
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
 
         .user-info .user-name {
-            font-weight: bold;
+            font-size: 1rem;
         }
+    }
+</style>
 
-        .user-info .user-materias {
-            font-size: 0.9rem;
-        }
+<!-- colocar los datos de los auxiliares oficiales -->
 
-        /* Enlace de contacto */
-        .user-info a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
-
-        /* Enlace de contacto al pasar el mouse */
-        .user-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* Media query para pantallas pequeñas */
-        @media (max-width: 600px) {
-            /* Reducir el tamaño de la imagen */
-            .user img {
-                width: 100px;
-                height: 120px;
-            }
-
-            /* Reducir el tamaño del texto */
-            .user-info {
-                max-width: 200px;
-            }
-
-            .user-info p {
-                font-size: 0.8rem;
-            }
-
-            .user-info .user-name {
-                font-size: 1rem;
-            }
-        }
-    </style>
-
-    <!-- colocar los datos de los auxiliares oficiales -->
-
-    <div class="materia">
-        <h3 style="font-weight: bold; text-align: center;">Auxiliares de Docencia</h3>
-        <p style="text-align: center; margin-top: -15px;">#EstamosParaAyudarte</p>
-    </div>
+<div class="materia">
+    <h3 style="font-weight: bold; text-align: center; margin-top: 15px;">Auxiliares de Docencia</h3>
+    <p style="text-align: center; margin-top: -15px;">#EstamosParaAyudarte</p>
+</div>
 
 <!-- 1-->
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Jheremy Alpire</p>
-                <p class="user-materias">Materias: Métodos Numéricos</p>
-                <a href="whatsapp://send?phone=+59178829829&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Jheremy Alpire</p>
+            <p class="user-materias">Materias: Métodos Numéricos</p>
+            <a
+                href="whatsapp://send?phone=+59178829829&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
         </div>
     </div>
-    <div class="user-list">
-        <div class="user">
-            <img src="img/Maykol.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Maykol Villazon</p>
-                <p class="user-materias">Materias: Introducción, Física I, Física II</p>
-                <a href="whatsapp://send?phone=+59171322951&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
-            </div>
+</div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/Maykol.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Maykol Villazon</p>
+            <p class="user-materias">Materias: Introducción, Física I, Física II</p>
+            <a
+                href="whatsapp://send?phone=+59171322951&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
         </div>
     </div>
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil" title="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Andres Melquisedec</p>
-                <p class="user-materias">Materias: Física I</p>
-                <a href="https://wa.me/+59169203835">Contactar</a>
-            </div>
+</div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil" title="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Andres Melquisedec</p>
+            <p class="user-materias">Materias: Física I</p>
+            <a href="https://wa.me/+59169203835">Contactar</a>
         </div>
     </div>
-    <div class="user-list">
-        <div class="user">
-            <img src="img/iafe.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Jhafeth Cadima</p>
-                <p class="user-materias">Materias: Estructuras, Prob I, Ecuaciones</p>
-                <a href="whatsapp://send?phone=+59171604249&text=Hola Auxi Jhafeth,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
-            </div>
+</div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/iafe.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Jhafeth Cadima</p>
+            <p class="user-materias">Materias: Estructuras, Prob I, Ecuaciones</p>
+            <a
+                href="whatsapp://send?phone=+59171604249&text=Hola Auxi Jhafeth,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
         </div>
     </div>
-    <div class="user-list">
-        <div class="user">
-            <img src="img/bruno.png" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Anthony Bruno</p>
-                <p class="user-materias">Materias: Cálculo 2</p>
-                <a href="https://wa.me/+59179062583">Contactar</a>
-            </div>
+</div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/bruno.png" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Anthony Bruno</p>
+            <p class="user-materias">Materias: Cálculo 2</p>
+            <a href="https://wa.me/+59179062583">Contactar</a>
         </div>
     </div>
+</div>
 
-   
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Claudia Cortez</p>
-                <p class="user-materias">Materias: Arquitectura De Computadora</p>
-                <a href="https://wa.me/+59163501235">Contactar</a>
-            </div>
+
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Claudia Cortez</p>
+            <p class="user-materias">Materias: Arquitectura De Computadora</p>
+            <a href="https://wa.me/+59163501235">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Daniel Cueto</p>
-                <p class="user-materias">Materias: Programación I, Lenguajes Formales</p>
-                <a href="https://wa.me/+59177667376">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Daniel Cueto</p>
+            <p class="user-materias">Materias: Programación I, Lenguajes Formales</p>
+            <a href="https://wa.me/+59177667376">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Brayan Garcia</p>
-                <p class="user-materias">Materias: Métodos Numéricos</p>
-                <a href="https://wa.me/+59172665897">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Brayan Garcia</p>
+            <p class="user-materias">Materias: Métodos Numéricos</p>
+            <a href="https://wa.me/+59172665897">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Emanuel Gutierrez</p>
-                <p class="user-materias">Materias: Física I, Base De Datos I</p>
-                <a href="https://wa.me/+59164493552">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Emanuel Gutierrez</p>
+            <p class="user-materias">Materias: Física I, Base De Datos I</p>
+            <a href="https://wa.me/+59164493552">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Diego Iglesias</p>
-                <p class="user-materias">Materias: Física I, Fisica II, Física III</p>
-                <a href="https://wa.me/+59173159598">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Diego Iglesias</p>
+            <p class="user-materias">Materias: Física I, Fisica II, Física III</p>
+            <a href="https://wa.me/+59173159598">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Darwin Mamani</p>
-                <p class="user-materias">Materias: Introducción, Programación I, Programación II</p>
-                <a href="https://wa.me/+59172182712">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Darwin Mamani</p>
+            <p class="user-materias">Materias: Introducción, Programación I, Programación II</p>
+            <a href="https://wa.me/+59172182712">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/michael.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Michael Mamani</p>
-                <p class="user-materias">Materias: Introducción, Programación I</p>
-                <a href="whatsapp://send?phone=+59165870876&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/michael.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Michael Mamani</p>
+            <p class="user-materias">Materias: Introducción, Programación I</p>
+            <a
+                href="whatsapp://send?phone=+59165870876&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Quimet Medina</p>
-                <p class="user-materias">Materias: Cálculo I</p>
-                <a href="whatsapp://send?phone=+59179871000&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Quimet Medina</p>
+            <p class="user-materias">Materias: Cálculo I</p>
+            <a
+                href="whatsapp://send?phone=+59179871000&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Jorge Miranda</p>
-                <p class="user-materias">Materias: Sistemas Logicos Y Digitales II</p>
-                <a href="https://wa.me/+59168775769">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Jorge Miranda</p>
+            <p class="user-materias">Materias: Sistemas Logicos Y Digitales II</p>
+            <a href="https://wa.me/+59168775769">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Gabriel Moron</p>
-                <p class="user-materias">Materias: Sistemas Lógicos Y Digitales I, Teoría De Campos, Interpretación De Sitemas Y Señal</p>
-                <a href="https://wa.me/+59175642081">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Gabriel Moron</p>
+            <p class="user-materias">Materias: Sistemas Lógicos Y Digitales I, Teoría De Campos, Interpretación De
+                Sitemas Y Señal</p>
+            <a href="https://wa.me/+59175642081">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Arlin Nuñez</p>
-                <p class="user-materias">Materias: Física II</p>
-                <a href="https://wa.me/+59171048427">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Arlin Nuñez</p>
+            <p class="user-materias">Materias: Física II</p>
+            <a href="https://wa.me/+59171048427">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/erick.png" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Erick Patton</p>
-                <p class="user-materias">Materias: Sistemas de Informacion I</p>
-                <a href="whatsapp://send?phone=+59160817597&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/erick.png" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Erick Patton</p>
+            <p class="user-materias">Materias: Sistemas de Informacion I</p>
+            <a
+                href="whatsapp://send?phone=+59160817597&text=Hola Auxi ,%20 Necesito%20de%20su%20Ayuda%20en%20una%20materia.⚡️">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Carlos Romagera</p>
-                <p class="user-materias">Materias: Economía Para La Gestión</p>
-                <a href="https://wa.me/+59178535572">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Carlos Romagera</p>
+            <p class="user-materias">Materias: Economía Para La Gestión</p>
+            <a href="https://wa.me/+59178535572">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Emanuel Vaca</p>
-                <p class="user-materias">Materias: Sistemas Expertos</p>
-                <a href="https://wa.me/+59162064184">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Emanuel Vaca</p>
+            <p class="user-materias">Materias: Sistemas Expertos</p>
+            <a href="https://wa.me/+59162064184">Contactar</a>
         </div>
     </div>
+</div>
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Luis Vargas</p>
-                <p class="user-materias">Materias: Base De Datos II</p>
-                <a href="https://wa.me/+59176373448">Contactar</a>
-            </div>
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Luis Vargas</p>
+            <p class="user-materias">Materias: Base De Datos II</p>
+            <a href="https://wa.me/+59176373448">Contactar</a>
         </div>
     </div>
+</div>
 
-  
 
-    <div class="user-list">
-        <div class="user">
-            <img src="img/perfil.jpg" alt="Foto de perfil">
-            <div class="user-info">
-                <p class="user-name">Edmundo Zenteno</p>
-                <p class="user-materias">Materias: Programación Logica Y Funcionales</p>
-                <a href="https://wa.me/+59176672876">Contactar</a>
-            </div>
+
+<div class="user-list">
+    <div class="user">
+        <img src="img/perfil.jpg" alt="Foto de perfil">
+        <div class="user-info">
+            <p class="user-name">Edmundo Zenteno</p>
+            <p class="user-materias">Materias: Programación Logica Y Funcionales</p>
+            <a href="https://wa.me/+59176672876">Contactar</a>
         </div>
     </div>
+</div>
