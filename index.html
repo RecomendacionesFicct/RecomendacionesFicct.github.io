@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
     <style>
+           .nav-link{
+            margin-right: 80px;
+        }
         /* Aquí colocas el bloque de estilos CSS */
         @media (max-width: 768px) {
             .sidebar-mini.sidebar-collapse .content-wrapper {
@@ -17,7 +20,9 @@
             .wrapper {
                 height: 100vh;
             }
-
+            .nav-link{
+             margin-right: 0px;
+            }
             .content-wrapper {
                 position: fixed;
                 /* Cambiado a posición fija */
@@ -66,8 +71,16 @@
 
         .content-wrapper {
             background-color: dark;
-            /* Cambia el fondo del contenido a blanco */
+            flex: 1;
+            /* El contenido se expandirá para ocupar todo el espacio disponible */
+            overflow-y: auto;
+            /* Añade desplazamiento vertical solo si el contenido excede la altura del contenedor */
+            margin-left: 250px;
+            /* Ancho del menú lateral */
+            padding-top: 56px;
+            /* Altura del main-header, ajusta según sea necesario */
         }
+
 
         .active {
             display: block;
@@ -77,11 +90,47 @@
         .main-sidebar {
             background-color: #8B0000;
             /* Rojo oscuro */
+            height: 100vh;
+            /* Establece la altura al 100% del viewport */
+            position: fixed;
+        }
+
+        /* Opcionalmente, si hay algún contenedor envolvente que también necesite altura del 100% */
+        .wrapper {
+            height: 100vh;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .main-sidebar {
+            background-color: #8B0000;
+            /* Rojo oscuro */
+            height: 100vh;
+            /* Establece la altura al 100% del viewport */
+            position: fixed;
+        }
+
+        .content-wrapper {
+            background-color: dark;
+            /* Cambia el fondo del contenido a blanco */
+            flex: 1;
+            overflow-y: auto;
+            /* Añade desplazamiento vertical solo al contenido */
+            margin-left: 250px;
+            /* Ancho del menú lateral */
         }
 
         .main-header {
             background-color: #8B0000 !important;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            /* Ajusta según sea necesario para que el header esté por encima de otros elementos */
         }
+     
     </style>
 
 </head>
