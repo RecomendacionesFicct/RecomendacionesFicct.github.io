@@ -78,10 +78,10 @@
             background-color: #8B0000;
             /* Rojo oscuro */
         }
-        .main-header{
+
+        .main-header {
             background-color: #8B0000 !important;
         }
-
     </style>
 
 </head>
@@ -648,9 +648,18 @@
             body.classList.toggle('dark-mode');
         }
 
+        // Función para activar el modo oscuro al cargar la página
+        function activateDarkMode() {
+            const body = document.querySelector('body');
+            body.classList.add('dark-mode');
+        }
+
         // Agregar un evento de clic al enlace de cambio de tema
         const themeToggle = document.getElementById('theme-toggle');
         themeToggle.addEventListener('click', toggleTheme);
+
+        // Activar el modo oscuro al cargar la página
+        activateDarkMode();
 
         document.addEventListener('DOMContentLoaded', function () {
             const words = ["Ing. Informática", "Ing. en Sistemas", "Ing. en Redes Y Telecomunicaciones", "Ing. en Robótica"];
