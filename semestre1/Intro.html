@@ -1,88 +1,102 @@
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
 
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .docente {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nombre-docente {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .materia {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    /* Estilos para las etiquetas de párrafo */
+    .docente p {
+        margin: 5px 0;
+        color: black;
+        /* Ajuste del margen superior e inferior de los párrafos dentro de .docente */
+    }
+
+    /* Media query para pantallas pequeñas */
+    @media (max-width: 600px) {
+        .materia{
+            margin-top: -50px;
+        }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
+            padding: 10px;
         }
 
         .docente {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
         }
 
         .nombre-docente {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-bottom: 5px;
+            font-size: 1.2rem;
         }
+    }
+</style>
+<div class="materia">
+    <h3 style="font-weight: bold; text-align: center; ">Introduccion a la Informatica</h3>
+    <p style="font-weight: bold; text-align: center; margin-top: -15px; ">INF110</p>
+</div>
 
-        .materia {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
 
-        /* Estilos para las etiquetas de párrafo */
-        .docente p {
-            margin: 5px 0;
-            /* Ajuste del margen superior e inferior de los párrafos dentro de .docente */
-        }
-
-        /* Media query para pantallas pequeñas */
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-
-            .docente {
-                padding: 10px;
-            }
-
-            .nombre-docente {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
-    <div class="materia">
-        <h3 style="font-weight: bold; text-align: center; ">Introduccion a la Informatica</h3>
-        <p style="font-weight: bold; text-align: center; ">INF110</p>
+    <!-- Ejemplo de información de un docente -->
+    <div class="docente">
+        <p class="nombre-docente">Juan Carlos Contreras</p>
+        <p>Dificultad: <span class="calificacion">⚡️⚡️</span></p>
+        <p>Aprendizaje: <span class="calificacion">⚡️⚡️⚡️</span></p>
+        <p>Recomendacion: <span class="calificacion">42</span></p>
+        <p>Descripcion: <span class="calificacion">Buen docente aprendes de el</span></p>
     </div>
-    <div class="container">
+    <div class="docente">
+        <p class="nombre-docente">Angelica Garzon</p>
+        <p>Dificultad: <span class="calificacion">⚡️⚡️</span></p>
+        <p>Aprendizaje: <span class="calificacion">⚡️⚡️</span></p>
+        <p>Recomendacion: <span class="calificacion">31</span></p>
+        <p>Descripcion: <span class="calificacion">Buen docente aprendes de el</span></p>
+    </div>
 
-        <!-- Ejemplo de información de un docente -->
-        <div class="docente">
-            <p class="nombre-docente">Juan Carlos Contreras</p>
-            <p>Dificultad: <span class="calificacion">⚡️⚡️⚡️⚡️⚡️</span></p>
-            <p>Aprendizaje: <span class="calificacion">⚡️⚡️⚡️</span></p>
-            <p>Descripcion: <span class="calificacion">Buen docente aprendes de el</span></p>
-        </div>
-
-        <div class="docente">
-            <p class="nombre-docente">Alberto Mollo</p>
-            <p>Dificultad: <span class="calificacion">⚡️⚡️⚡️</span></p>
-            <p>Aprendizaje: <span class="calificacion">⚡️⚡️⚡️⚡️⚡️</span></p>
-            <p>Descripcion: <span class="calificacion">Buen docente aprendes de el</span></p>
-        </div>
-        <!-- Puedes agregar más bloques 'docente' según sea necesario -->
-        <p style="font-size: 0.9rem; margin-bottom: 5px;">Los rayitos determinan la recomendación. El docente más
-            recomendado es aquel que tenga más rayitos.</p>
-        <p style="font-size: 0.9rem; margin-bottom: 5px;">Dificultad: Puede variar desde fácil hasta difícil, y se
-            refiere a la cantidad de esfuerzo y tiempo que se requiere para comprender y dominar la materia.</p>
-        <p style="font-size: 0.9rem; margin-bottom: 5px;">Aprendizaje: Se refiere al proceso de adquirir conocimientos y
-            enseñanza de los docentes de cada materia.</p>
+    <div class="docente">
+        <p class="nombre-docente">Alberto Mollo</p>
+        <p>Dificultad: <span class="calificacion">⚡️⚡️⚡️</span></p>
+        <p>Aprendizaje: <span class="calificacion">⚡️</span></p>
+        <p>Recomendacion: <span class="calificacion">14</span></p>
+        <p>Descripcion: <span class="calificacion">Buen docente aprendes de el</span></p>
+    </div>
+ 
+   
+    <div class="docente">
+        <p>Dificultad = Facil(⚡️⚡️⚡️) | Normal(⚡️⚡️) | Dificil(⚡️)</p>
+        <p>Aprendizaje = Excelente(⚡️⚡️⚡️) | Buena(⚡️⚡️) | Mala(⚡️)</p>
+    </div>
