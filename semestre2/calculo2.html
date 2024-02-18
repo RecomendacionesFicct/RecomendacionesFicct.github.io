@@ -1,4 +1,97 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .docente {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nombre-docente {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .materia {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    /* Estilos para las etiquetas de párrafo */
+    .docente p {
+        margin: 5px 0;
+        color: black;
+        /* Ajuste del margen superior e inferior de los párrafos dentro de .docente */
+    }
+
+    /* Media query para pantallas pequeñas */
+    @media (max-width: 600px) {
+        .materia{
+            margin-top: -50px;
+        }
+        .container {
+            padding: 10px;
+        }
+
+        .docente {
+            padding: 10px;
+        }
+
+        .nombre-docente {
+            font-size: 1.2rem;
+        }
+    }
+</style>
 <div class="materia">
     <h3 style="font-weight: bold; text-align: center; ">Calculo II</h3>
-    <p style="font-weight: bold; text-align: center; ">MAT102</p>
+    <p style="font-weight: bold; text-align: center; margin-top: -15px; ">MAT102</p>
 </div>
+
+
+    <!-- Ejemplo de información de un docente -->
+    <div class="docente">
+        <p class="nombre-docente">Lazo Arteaga</p>
+        <p>Dificultad: <span class="calificacion">⚡️⚡️⚡️⚡️</span></p>
+        <p>Aprendizaje: <span class="calificacion">⚡️⚡️⚡️</span></p>
+        <p>Recomendacion: <span class="calificacion">1</span></p>
+        <p>Descripcion: <span class="calificacion">Bueno por que entra su reemplazo y es sencillo con el porque quiere que 
+            todos pasen
+        </span></p>
+    </div>
+    <div class="docente">
+        <p class="nombre-docente">Guaman </p>
+        <p>Dificultad: <span class="calificacion">⚡️⚡️⚡️⚡️</span></p>
+        <p>Aprendizaje: <span class="calificacion">⚡️⚡️⚡️</span></p>
+        <p>Recomendacion: <span class="calificacion">1</span></p>
+        <p>Descripcion: <span class="calificacion">si estudias pasas</span></p>
+    </div>
+
+  
+   
+    <div class="docente">
+        <p>Dificultad = Facil(⚡️⚡️⚡️) | Normal(⚡️⚡️) | Dificil(⚡️)</p>
+        <p>Aprendizaje = Excelente(⚡️⚡️⚡️) | Buena(⚡️⚡️) | Mala(⚡️)</p>
+    </div>
