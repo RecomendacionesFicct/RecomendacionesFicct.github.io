@@ -1,6 +1,38 @@
-<div class="materia">
-    <h3 style="font-weight: bold; text-align: center;">Informaciones Ficct</h3>
-    <p style="text-align: center; margin-top: -8px;">El_OLimpo_Ficct</p>
-</div>
+<style>
+    .gallery {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr));
+       gap: 20px; 
+       max-width: 1200px; 
+       margin: 0 auto;
+   }
 
-    
+   .gallery img {
+       width: 100%;
+       height: auto;
+       transition: transform 0.3s;
+       border-radius: 10px;
+   }
+
+   .gallery img:hover {
+       transform: scale(1.1);
+   }
+   .materia {
+       text-align: center;
+   }
+</style>
+
+<div class="materia">
+   <h3 style="font-weight: bold;">Informaciones Ficct</h3>
+   <p>El_OLimpo_Ficct</p>
+</div>
+<div class="gallery">
+   <a href="img/mallasistemas.jpeg" target="_blank"><img src="img/mallasistemas.jpeg" alt="Malla_Sistemas"></a>
+   <a href="img/mallainformatica.jpeg" target="_blank"><img src="img/mallainformatica.jpeg" alt="Malla_Info"></a>
+   <a href="img/mallaredes.jpeg" target="_blank"><img src="img/mallaredes.jpeg" alt="Malla_Redes"></a>
+   <a href="img/perfilsistemas.jpeg" target="_blank"><img src="img/perfilsistemas.jpeg" alt="Info_Sis"></a>
+   <a href="img/periflinformatica.jpeg" target="_blank"><img src="img/periflinformatica.jpeg" alt="Info_Inf"></a>
+   <a href="img/perfilredes.jpeg" target="_blank"><img src="img/perfilredes.jpeg" alt="Info_Redes"></a>
+   <a href="img/casoespeciales.jpeg" target="_blank"><img src="img/casoespeciales.jpeg" alt="Info_Especi"></a>
+   <a href="img/comunicado1.jpeg" target="_blank"><img src="img/comunicado1.jpeg" alt="Info_Especi"></a>
+</div>
